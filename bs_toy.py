@@ -63,8 +63,6 @@ def add_mpg_to_team_roster(team_roster):
 #soup = BeautifulSoup(urllib2.urlopen(url).read())
 soup = BeautifulSoup(open('./test/syr.html').read())
 
-#extract_table('per_game')
-
 team_roster = get_simple_roster(soup)
 player_list = get_player_list(team_roster)
 team_roster = add_mpg_to_team_roster(team_roster)
